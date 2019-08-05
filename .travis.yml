@@ -1,11 +1,12 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 cache:
   directories:
   - node_modules
 script:
-  - npm test
-#  - npm run build
-#after_script:
-#  - cat ./coverage/lcov.info | coveralls
+- npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: 5JkuySBRp4y2sRRzowQDyS4C6O5zuzOISGM9NqWJE1PAlj7CbcSbMMMDS8IXEqu8chz00vNui9wO2hlWd6rAouloO/6UCzm5Z603nfWaLiqN0xPmqhl2qIdjCepb4QR44l5UZhWOBdZ3363kB1Fp7gZXv0cc2Zdxk9Fs795xD+XBtlBtCz/Vn3H+pGZmlKKzCrsmDjfngo/wgCN2pBp83A/Sh2CyGMuw1aYMtAOG3sVhriQBw9fupOEQ8gxp88t5phlShTeyCicTOfiG/u3Y02ZmsyrSuEEEZ0olmB+V8VWQ+ye9PwnqsqH5z+NdA+6zy1HZgELE5m3AEkmdcJjSYWDAjXfvcfhSs1exkznBWjWa6pjcV06Iv8NRfU8mBm1FSQU7Z5zsmayuH9GaW9stzLZlHiMoG7JFGYQXu0hiIZGKFAE4fNCa0GM5sMmn6C/eJ5POAWlO5ynHJZlrVnBqAAAmAWvdtmAOesmOt6sng1E++7sYwBxMlcB7fnJ/g6ESVU74BaSscyX7Rw5YfB/6ud5uNRulsjBr65M62oO4E3vZvU/RJPwZmKKg3atHd+GhxbRn2Js+A5M/jKS1DiZ9FEmG71jz3HvT6CjDMJKo5upaY3Rd8g1siYzh0VbaSUfrrKKxg1Yxa2Wwo1lROuJ2RK9se6g20Ia7SUmMg1bHdiI=
